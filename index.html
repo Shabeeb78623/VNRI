@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vadakara NRI Forum Abu Dhabi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            /* Colors sampled from the logo */
+            --vnri-blue: #0057a7;
+            --vnri-gold: #f39c12;
+            --vnri-orange: #e67e22;
+            --vnri-ribbon-pink: #c82c87;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Custom Tailwind classes */
+        .bg-vnri-blue { background-color: var(--vnri-blue); }
+        .text-vnri-blue { color: var(--vnri-blue); }
+        .bg-vnri-gold { background-color: var(--vnri-gold); }
+        .text-vnri-gold { color: var(--vnri-gold); }
+        .border-vnri-gold { border-color: var(--vnri-gold); }
+        .hover\:bg-vnri-orange:hover { background-color: var(--vnri-orange); }
+        .hover\:border-vnri-orange:hover { border-color: var(--vnri-orange); }
+
+        .nav-link {
+            @apply px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-vnri-gold hover:text-vnri-blue transition-colors;
+        }
+        .nav-link-mobile {
+            @apply block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-vnri-gold hover:text-vnri-blue transition-colors;
+        }
+
+        /* Hero section gradient */
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--vnri-blue), #0a3a6b);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- "Made by" Badge -->
+    <div class="fixed bottom-4 right-4 bg-vnri-gold text-vnri-blue text-sm font-semibold px-4 py-2 rounded-lg shadow-lg z-50">
+        Made by Shabeeb K.K
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="bg-vnri-blue shadow-lg sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="flex items-center">
+                        <!--
+                          IMPORTANT: Replace 'image_f2c9fb.jpg' with the correct path to your logo file.
+                          You may need to upload it to your web host and link it here.
+                        -->
+                        <img class="h-16 w-auto" src="image_f2c9fb.jpg" alt="Vadakara NRI Forum Abu Dhabi Logo" onerror="this.style.display='none'">
+                        <span class="text-white text-xl font-bold ml-3">Vadakara NRI Forum</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About Us</a>
+                        <a href="#committee" class="nav-link">Committee</a>
+                        <a href="#balavedhi" class="nav-link">Balavedhi</a>
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="https://shabeeb.netlify.app" target="_blank" rel="noopener noreferrer" class="ml-2 px-3 py-2 rounded-md text-sm font-medium bg-vnri-gold text-vnri-blue hover:bg-vnri-orange transition-colors">Membership Portal</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white hover:bg-vnri-gold focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Hamburger Icon -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                        <!-- Close Icon -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (collapsible) -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="nav-link-mobile">Home</a>
+                <a href="#about" class="nav-link-mobile">About Us</a>
+                <a href="#committee" class="nav-link-mobile">Committee</a>
+                <a href="#balavedhi" class="nav-link-mobile">Balavedhi</a>
+                <a href="#gallery" class="nav-link-mobile">Gallery</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+                <a href="https://shabeeb.netlify.app" target="_blank" rel="noopener noreferrer" class="nav-link-mobile">Membership Portal</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-gradient text-white pt-16 pb-24 md:pt-24 md:pb-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
+                    <span class="block">Welcome to</span>
+                    <span class="block text-vnri-gold mt-2">Vadakara NRI Forum Abu Dhabi</span>
+                </h1>
+                <p class="mt-6 max-w-lg mx-auto text-xl text-gray-200 sm:max-w-3xl">
+                    Celebrating 20 Years of Togetherness. Connecting our community, fostering our culture, and supporting each other in the UAE.
+                </p>
+                <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+                    <a href="https://shabeeb.netlify.app" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-lg text-vnri-blue bg-vnri-gold hover:bg-vnri-orange transition-all transform hover:scale-105">
+                        Join Our Community
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Portal Call to Action Section (Enhanced with Animation) -->
+        <section id="membership-portal-info" class="py-16 md:py-24 bg-gray-100 relative overflow-hidden">
+            <!-- Decorative wave pattern for visual interest -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+                <svg class="w-full h-full" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- This SVG creates a light blue wave pattern in the background -->
+                    <path fill="var(--vnri-blue)" fill-opacity="1" d="M0,192L60,186.7C120,181,240,171,360,170.7C480,171,600,181,720,186.7C840,192,960,192,1080,170.7C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+                </svg>
+            </div>
+
+            <!-- Main Content Card with Hover Animation -->
+            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 p-8 bg-white rounded-xl shadow-2xl transition-all duration-300 hover:shadow-vnri-orange hover:scale-[1.02]">
+                <h2 class="text-3xl font-extrabold text-vnri-blue sm:text-4xl">
+                    Membership Portal
+                </h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Access your dedicated online services, update your profile, and renew your membership through our secure portal. Join us today to become a part of the Vadakara family in Abu Dhabi!
+                </p>
+                <div class="mt-10">
+                    <a href="https://shabeeb.netlify.app" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-10 py-4 border border-transparent text-lg font-medium rounded-lg shadow-xl text-vnri-blue bg-vnri-gold hover:bg-vnri-orange hover:text-white transition-all transform hover:scale-105 inline-block">
+                        Membership Portal
+                    </a>
+                </div>
+                <!-- The "Website Developed By" block was removed from here as requested. -->
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-gray-50"> <!-- Changed background for contrast -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-vnri-blue sm:text-4xl">
+                        About Us
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Our Mission, Vision, and Story
+                    </p>
+                </div>
+                <div class="mt-12 text-base text-gray-700 space-y-6">
+                    <!-- REPLACE THIS with your actual "About Us" content -->
+                    <p>Vadakara NRI Forum Abu Dhabi is a vibrant community organization dedicated to bringing together expatriates from Vadakara and surrounding regions. Established over two decades ago, our forum serves as a home away from home, fostering a strong sense of unity, culture, and mutual support among our members.</p>
+                    <p>Our mission is to promote social, cultural, and welfare activities, nurturing our traditional values while embracing the dynamic life of Abu Dhabi. We organize numerous events throughout the year, including cultural festivals, sports meets, educational programs, and charitable initiatives.</p>
+                    <p>We are proud of our "20 Years of Togetherness" and look forward to many more years of serving our community, strengthening our bonds, and creating lasting memories.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Committee Sections -->
+        <section id="committee" class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-vnri-blue sm:text-4xl">
+                        Our Leadership
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Meet the teams guiding our community.
+                    </p>
+                </div>
+
+                <!-- Main Committee -->
+                <div class="mt-16">
+                    <h3 class="text-2xl font-bold text-center text-vnri-orange mb-8">
+                        Main Committee
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                        <!-- Replace these with actual committee members -->
+                        <!-- Member Card Example -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Basheer K Photo">
+                            <h4 class="text-lg font-semibold text-vnri-blue">Basheer K</h4>
+                            <p class="text-vnri-orange">President</p>
+                        </div>
+                        <!-- Member Card Example -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Sreejith Photo">
+                            <h4 class="text-lg font-semibold text-vnri-blue">Sreejith</h4>
+                            <p class="text-vnri-orange">General Secretary</p>
+                        </div>
+                        <!-- Member Card Example -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Yasar Photo">
+                            <h4 class="text-lg font-semibold text-vnri-blue">Yasar</h4>
+                            <p class="text-vnri-orange">Treasurer</p>
+                        </div>
+                        <!-- Add more members as needed -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Member Photo">
+                            <h4 class="text-lg font-semibold text-vnri-blue">Member Name</h4>
+                            <p class="text-vnri-orange">Vice President</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Balavedhi Committee -->
+                <div id="balavedhi" class="mt-16">
+                    <h3 class="text-2xl font-bold text-center text-vnri-orange mb-8">
+                        Balavedhi Committee
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                        <!-- Updated from screenshot -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Minha Riyas Photo">
+                            <h4 class="text-lg font-semibold text-vnri-blue">Minha Riyas</h4>
+                            <p class="text-vnri-orange">President</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Hishaan Vikas Photo">
+                            <h4 class="text-lg font-semibold text-vnri-blue">Hishaan Vikas</h4>
+                            <p class="text-vnri-orange">General Secretary</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Shabeeb Photo">
+                            <h4 class="text-lg font-semibold text-vnri-blue">Shabeeb</h4>
+                            <p class="text-vnri-orange">Vice president</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Iftin Arafath Photo">
+                            <h4 class="text-lg font-semibold text-vnri-blue">Iftin Arafath</h4>
+                            <p class="text-vnri-orange">Join secretary</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ladies Wing Committee (REMOVED) -->
+                <!--
+                <div id="ladies-wing" class="mt-16">
+                    ...
+                </div>
+                -->
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-vnri-blue sm:text-4xl">
+                        Event Gallery
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Moments from our programs and socials.
+                    </p>
+                </div>
+                <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                    <!-- Replace these with your actual photos -->
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/0057a7/ffffff?text=Community+Gathering" alt="Event Photo 1">
+                    </div>
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/f39c12/000000?text=Onam+Celebration" alt="Event Photo 2">
+                    </div>
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/e67e22/ffffff?text=Sports+Day" alt="Event Photo 3">
+                    </div>
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/c82c87/ffffff?text=Cultural+Event" alt="Event Photo 4">
+                    </div>
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/0057a7/ffffff?text=Balavedhi+Program" alt="Event Photo 5">
+                    </div>
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/f39c12/000000?text=Gala+Dinner" alt="Event Photo 6">
+                    </div>
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/e67e22/ffffff?text=Committee+Meeting" alt="Event Photo 7">
+                    </div>
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/c82c87/ffffff?text=Volunteer+Team" alt="Event Photo 8">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-vnri-blue text-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                        Get In Touch
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-300">
+                        We'd love to hear from you.
+                    </p>
+                </div>
+                <div class="mt-12 max-w-lg mx-auto text-center">
+                    <!-- Replace with your actual contact info -->
+                    <p class="text-xl">
+                        <strong>Email:</strong> vnriabudhabi@gmail.com
+                    </p>
+                    <p class="text-xl mt-2">
+                        <strong>Phone:</strong> +971 50 314 0534
+                    </p>
+                    <p class="text-xl mt-2">
+                        <strong>Address:</strong> Abu Dhabi, UAE
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="mt-8 flex justify-center space-x-6">
+                        <a href="https://facebook.com/vnri.abudhabi" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-vnri-gold transition-colors">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/vnri.abudhabi" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-vnri-gold transition-colors">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm6.406-2.188c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/971503140534" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-vnri-gold transition-colors">
+                            <span class="sr-only">WhatsApp</span>
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.46 3.48 1.28 4.94L2 22l5.25-1.38c1.41.79 3.05 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zM12.04 20.15c-1.6 0-3.13-.42-4.43-1.16l-.32-.19-3.28.86.88-3.2-.21-.34c-.82-1.34-1.26-2.91-1.26-4.55 0-4.54 3.69-8.23 8.23-8.23 4.54 0 8.23 3.69 8.23 8.23s-3.69 8.23-8.23 8.23zm4.49-5.93c-.25-.12-1.47-.72-1.7-.8c-.23-.08-.39-.12-.56.12-.16.25-.64.8-.79.96-.15.16-.3.18-.56.06-.26-.12-1.1-.41-2.1-1.29-.78-.68-1.3-1.53-1.45-1.79-.16-.26-.02-.39.11-.51.11-.11.25-.28.37-.42.13-.14.17-.25.25-.41.08-.16.04-.3-.02-.42s-.56-1.34-.76-1.84c-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.42.06-.64.3s-.86.83-.86 2.02c0 1.19.88 2.35 1 2.51.12.16 1.76 2.68 4.27 3.77 1.71.76 2.14.86 2.89.73.83-.15 1.47-.61 1.67-1.18.21-.57.21-1.05.15-1.18-.07-.12-.23-.19-.48-.31z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Vadakara NRI Forum Abu Dhabi. All Rights Reserved.</p>
+            <p class="mt-2 text-sm">Developed by Shabeeb K.K. | shabeebkk10@gmail.com</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+
+        menuButton.addEventListener('click', () => {
+            const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+            // Toggle icons
+            menuButton.querySelector('svg:first-child').classList.toggle('hidden');
+            menuButton.querySelector('svg:last-child').classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuButton.setAttribute('aria-expanded', 'false');
+                mobileMenu.classList.add('hidden');
+                menuButton.querySelector('svg:first-child').classList.remove('hidden');
+                menuButton.querySelector('svg:last-child').classList.add('hidden');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+            const isClickInsideMenu = mobileMenu.contains(event.target);
+            const isClickOnButton = menuButton.contains(event.target);
+            if (!isClickInsideMenu && !isClickOnButton && menuButton.getAttribute('aria-expanded') === 'true') {
+                menuButton.setAttribute('aria-expanded', 'false');
+                mobileMenu.classList.add('hidden');
+                menuButton.querySelector('svg:first-child').classList.remove('hidden');
+                menuButton.querySelector('svg:last-child').classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
