@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    
     <!-- Custom Styles -->
     <style>
         :root {
@@ -33,14 +33,14 @@
         .border-vnri-gold { border-color: var(--vnri-gold); }
         .hover\:bg-vnri-orange:hover { background-color: var(--vnri-orange); }
         .hover\:border-vnri-orange:hover { border-color: var(--vnri-orange); }
-
+        
         .nav-link {
             @apply px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-vnri-gold hover:text-vnri-blue transition-colors;
         }
         .nav-link-mobile {
             @apply block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-vnri-gold hover:text-vnri-blue transition-colors;
         }
-
+        
         /* Hero section gradient */
         .hero-gradient {
             background: linear-gradient(135deg, var(--vnri-blue), #0a3a6b);
@@ -61,15 +61,14 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0">
                     <a href="#home" class="flex items-center">
-                        <!--
-                          IMPORTANT: Replace 'image_f2c9fb.jpg' with the correct path to your logo file.
-                          You may need to upload it to your web host and link it here.
+                        <!-- 
+                          ACTION REQUIRED: Upload your logo to 'assets/image_f2c9fb.jpg'.
                         -->
-                        <img class="h-16 w-auto" src="image_f2c9fb.jpg" alt="Vadakara NRI Forum Abu Dhabi Logo" onerror="this.style.display='none'">
+                        <img class="h-16 w-auto" src="assets/image_f2c9fb.jpg" alt="Vadakara NRI Forum Abu Dhabi Logo" onerror="this.style.display='none'">
                         <span class="text-white text-xl font-bold ml-3">Vadakara NRI Forum</span>
                     </a>
                 </div>
-
+                
                 <!-- Desktop Menu -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
@@ -82,7 +81,7 @@
                         <a href="https://shabeeb.netlify.app" target="_blank" rel="noopener noreferrer" class="ml-2 px-3 py-2 rounded-md text-sm font-medium bg-vnri-gold text-vnri-blue hover:bg-vnri-orange transition-colors">Membership Portal</a>
                     </div>
                 </div>
-
+                
                 <!-- Mobile Menu Button -->
                 <div class="-mr-2 flex md:hidden">
                     <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white hover:bg-vnri-gold focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
@@ -156,7 +155,6 @@
                         Membership Portal
                     </a>
                 </div>
-                <!-- The "Website Developed By" block was removed from here as requested. -->
             </div>
         </section>
 
@@ -198,28 +196,28 @@
                         Main Committee
                     </h3>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-                        <!-- Replace these with actual committee members -->
-                        <!-- Member Card Example -->
+                        <!-- 
+                          ACTION REQUIRED: Upload member photos to the 'assets/committee/' folder.
+                          The placeholder filenames use the position for easy replacement.
+                        -->
                         <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Basheer K Photo">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="assets/committee/President_BasheerK.jpg" alt="Basheer K Photo">
                             <h4 class="text-lg font-semibold text-vnri-blue">Basheer K</h4>
                             <p class="text-vnri-orange">President</p>
                         </div>
-                        <!-- Member Card Example -->
                         <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Sreejith Photo">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="assets/committee/GeneralSecretary_Sreejith.jpg" alt="Sreejith Photo">
                             <h4 class="text-lg font-semibold text-vnri-blue">Sreejith</h4>
                             <p class="text-vnri-orange">General Secretary</p>
                         </div>
-                        <!-- Member Card Example -->
                         <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Yasar Photo">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="assets/committee/Treasurer_Yasar.jpg" alt="Yasar Photo">
                             <h4 class="text-lg font-semibold text-vnri-blue">Yasar</h4>
                             <p class="text-vnri-orange">Treasurer</p>
                         </div>
                         <!-- Add more members as needed -->
                         <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Member Photo">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="assets/committee/VicePresident_Placeholder.jpg" alt="Member Photo">
                             <h4 class="text-lg font-semibold text-vnri-blue">Member Name</h4>
                             <p class="text-vnri-orange">Vice President</p>
                         </div>
@@ -232,36 +230,32 @@
                         Balavedhi Committee
                     </h3>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-                        <!-- Updated from screenshot -->
+                        <!-- 
+                          ACTION REQUIRED: Upload member photos to the 'assets/balavedhi/' folder.
+                          The placeholder filenames use the position for easy replacement.
+                        -->
                         <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Minha Riyas Photo">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="assets/balavedhi/President_MinhaRiyas.jpg" alt="Minha Riyas Photo">
                             <h4 class="text-lg font-semibold text-vnri-blue">Minha Riyas</h4>
                             <p class="text-vnri-orange">President</p>
                         </div>
                         <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Hishaan Vikas Photo">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="assets/balavedhi/GeneralSecretary_HishaanVikas.jpg" alt="Hishaan Vikas Photo">
                             <h4 class="text-lg font-semibold text-vnri-blue">Hishaan Vikas</h4>
                             <p class="text-vnri-orange">General Secretary</p>
                         </div>
                         <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Shabeeb Photo">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="assets/balavedhi/VicePresident_Shabeeb.jpg" alt="Shabeeb Photo">
                             <h4 class="text-lg font-semibold text-vnri-blue">Shabeeb</h4>
                             <p class="text-vnri-orange">Vice president</p>
                         </div>
                         <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://placehold.co/150x150/0057a7/f39c12?text=Photo" alt="Iftin Arafath Photo">
+                            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="assets/balavedhi/JointSecretary_IftinArafath.jpg" alt="Iftin Arafath Photo">
                             <h4 class="text-lg font-semibold text-vnri-blue">Iftin Arafath</h4>
                             <p class="text-vnri-orange">Join secretary</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Ladies Wing Committee (REMOVED) -->
-                <!--
-                <div id="ladies-wing" class="mt-16">
-                    ...
-                </div>
-                -->
             </div>
         </section>
 
@@ -277,30 +271,33 @@
                     </p>
                 </div>
                 <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-                    <!-- Replace these with your actual photos -->
+                    <!-- 
+                      ACTION REQUIRED: Upload event photos to the 'assets/gallery/' folder.
+                      The placeholder filenames are numbered for easy replacement.
+                    -->
                     <div class="aspect-w-1 aspect-h-1">
-                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/0057a7/ffffff?text=Community+Gathering" alt="Event Photo 1">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="assets/gallery/Program_01.jpg" alt="Event Photo 1">
                     </div>
                     <div class="aspect-w-1 aspect-h-1">
-                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/f39c12/000000?text=Onam+Celebration" alt="Event Photo 2">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="assets/gallery/Program_02.jpg" alt="Event Photo 2">
                     </div>
                     <div class="aspect-w-1 aspect-h-1">
-                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/e67e22/ffffff?text=Sports+Day" alt="Event Photo 3">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="assets/gallery/Program_03.jpg" alt="Event Photo 3">
                     </div>
                     <div class="aspect-w-1 aspect-h-1">
-                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/c82c87/ffffff?text=Cultural+Event" alt="Event Photo 4">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="assets/gallery/Program_04.jpg" alt="Event Photo 4">
                     </div>
                     <div class="aspect-w-1 aspect-h-1">
-                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/0057a7/ffffff?text=Balavedhi+Program" alt="Event Photo 5">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="assets/gallery/Program_05.jpg" alt="Event Photo 5">
                     </div>
                     <div class="aspect-w-1 aspect-h-1">
-                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/f39c12/000000?text=Gala+Dinner" alt="Event Photo 6">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="assets/gallery/Program_06.jpg" alt="Event Photo 6">
                     </div>
                     <div class="aspect-w-1 aspect-h-1">
-                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/e67e22/ffffff?text=Committee+Meeting" alt="Event Photo 7">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="assets/gallery/Program_07.jpg" alt="Event Photo 7">
                     </div>
                     <div class="aspect-w-1 aspect-h-1">
-                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="https://placehold.co/400x400/c82c87/ffffff?text=Volunteer+Team" alt="Event Photo 8">
+                        <img class="w-full h-full object-cover rounded-lg shadow-md" src="assets/gallery/Program_08.jpg" alt="Event Photo 8">
                     </div>
                 </div>
             </div>
@@ -377,7 +374,7 @@
             menuButton.querySelector('svg:first-child').classList.toggle('hidden');
             menuButton.querySelector('svg:last-child').classList.toggle('hidden');
         });
-
+        
         // Close menu when a link is clicked
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -387,7 +384,7 @@
                 menuButton.querySelector('svg:last-child').classList.add('hidden');
             });
         });
-
+        
         // Close menu when clicking outside
         document.addEventListener('click', (event) => {
             const isClickInsideMenu = mobileMenu.contains(event.target);
